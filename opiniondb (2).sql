@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 28 Lut 2018, 20:05
+-- Czas generowania: 02 Mar 2018, 13:43
 -- Wersja serwera: 10.1.30-MariaDB
 -- Wersja PHP: 7.0.27
 
@@ -36,9 +36,10 @@ CREATE TABLE `reviews` (
   `category` varchar(255) COLLATE utf8_polish_ci NOT NULL,
   `rating` int(11) NOT NULL,
   `description` varchar(255) COLLATE utf8_polish_ci NOT NULL,
+  `imageName` varchar(255) COLLATE utf8_polish_ci NOT NULL,
   `imageUrl` varchar(255) COLLATE utf8_polish_ci NOT NULL,
   `imageType` varchar(255) COLLATE utf8_polish_ci NOT NULL,
-  `imageSize` int(20) NOT NULL,
+  `imageSize` int(255) NOT NULL,
   `ip` varchar(255) COLLATE utf8_polish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
@@ -46,16 +47,14 @@ CREATE TABLE `reviews` (
 -- Zrzut danych tabeli `reviews`
 --
 
-INSERT INTO `reviews` (`id`, `name`, `surname`, `email`, `category`, `rating`, `description`, `imageUrl`, `imageType`, `imageSize`, `ip`) VALUES
-(41, 'Jan', 'Nowak', 'jan@wp.pl', 'Ocena firmy', 4, 'opis firmy', 'images/38626bus3.jpg', 'image/jpeg', 91298, '::1'),
-(42, 'Adam', 'Nowak', 'adam@wp.pl', 'Ocena produktu', 5, 'opis', 'images/3385658bff6e69193d.jpg', 'image/jpeg', 563823, '::1'),
-(43, 'Piotr', 'Polak', 'pio@wp.pl', 'Ocena firmy', 1, '', 'images/68625busi.jpg', 'image/jpeg', 123922, '::1'),
-(45, 'Monika', 'Kowal', 'mon@wp.pl', 'Ocena firmy', 5, 'opis opis opis', 'images/', '', 0, '::1'),
-(46, 'Katarzyna', 'Kowalska', 'kat@wp.pl', 'Ocena produktu', 2, 'opis test', 'images/9037258bfefda5f685.jpg', 'image/jpeg', 447890, '::1'),
-(47, 'Michał', 'Poniedziałek', 'michu@wp.pl', 'Inne', 5, 'opis opis', 'images/30377bus2.jpg', 'image/jpeg', 165562, '::1'),
-(48, 'Pawel', 'Wtorek', 'pawel@wp.pl', 'Inne', 3, 'opis opis', 'images/', '', 0, '::1'),
-(49, 'Paulina', 'Środa', 'paul@wp.pl', 'Ocena produktu', 4, 'opis', 'images/4757458bff6e69193d.jpg', 'image/jpeg', 563823, '::1'),
-(50, 'Andrzej', 'Kaczka', 'and@wp.pl', 'Inne', 4, 'opis', 'images/77912bus3.jpg', 'image/jpeg', 91298, '::1');
+INSERT INTO `reviews` (`id`, `name`, `surname`, `email`, `category`, `rating`, `description`, `imageName`, `imageUrl`, `imageType`, `imageSize`, `ip`) VALUES
+(72, 'Jan', 'Polak', 'jan@w.pl', 'Inne', 2, 'opis', '28152architecture-2256489_1920.jpg', 'images/28152architecture-2256489_1920.jpg', 'image/jpeg', 790437, '::1'),
+(73, 'Piotr', 'Kowal', 'pio@wsp.pl', 'Ocena produktu', 1, 'opis', '54730calculator-925385_1920.jpg', 'images/54730calculator-925385_1920.jpg', 'image/jpeg', 544706, '::1'),
+(74, 'Jan', 'Kowalski', 'jan@p.pl', 'Inne', 2, 'opis', '5639358bff6e69193d.jpg', 'images/5639358bff6e69193d.jpg', 'image/jpeg', 563823, '::1'),
+(75, 'Monika', 'Wtorek', 'mon@aaa.pl', 'Inne', 5, '', '', 'images/', '', 0, '::1'),
+(76, 'Andrzej', 'Kaczka', 'andr@s.com', 'Ocena produktu', 3, 'opis', '48621workshop-1746275_1920.jpg', 'images/48621workshop-1746275_1920.jpg', 'image/jpeg', 321017, '::1'),
+(77, 'Rafał', 'Stary', 'stary@www.com', 'Ocena produktu', 3, 'opis', '', 'images/', '', 0, '::1'),
+(78, 'Janek', 'Poniedziałek', 'janek@wwwww.pl', 'Ocena firmy', 5, 'opis firmy', '93570flatiron-building-1704695_1920.jpg', 'images/93570flatiron-building-1704695_1920.jpg', 'image/jpeg', 660929, '::1');
 
 --
 -- Indeksy dla zrzutów tabel
@@ -75,7 +74,7 @@ ALTER TABLE `reviews`
 -- AUTO_INCREMENT dla tabeli `reviews`
 --
 ALTER TABLE `reviews`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
