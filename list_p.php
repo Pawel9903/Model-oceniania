@@ -15,7 +15,7 @@ $allPages = ceil($count / $limit);
 echo "<div class='container text-center'>";
 foreach($query->fetchAll() as $key=>$value):?>
             <br>
-    <div class="card rounded col-4 my-3 py-2 offset-4 border-dark">
+    <div class="card rounded col-md-4 col-sm-12 my-3 py-2  offset-md-4 border-dark">
             <a href="<?php echo $value->imageUrl; ?>"><img class="images card-img-top card-img img-thumbnail col-12" src="<?php if($value->imageUrl == 'images/') echo "/images/noimage.jpg"; else echo "images/thumbnail/thumb".$value->imageName ?>" alt="Image"/></a>
                 <div class="body">
                     <p class="card-title display-4"><?php echo $value->name." ".$value->surname; ?></p>
@@ -28,7 +28,7 @@ foreach($query->fetchAll() as $key=>$value):?>
                          </ul>
                         <a class="btn btn-danger" href="<?php echo "delete.php?id=".$value->id ;?>">Usuń opinię</a>
                     <?php if($value->imageUrl !='images/'):?>
-                        <a class="btn btn-dark" href="<?php echo "download.php?url=".$value->imageUrl."&type=".$value->imageType."&size=".$value->imageSize ;?>">Pobierz pełny obraz</a>
+                        <a class="btn btn-dark" href="<?php echo "download.php?url=".$value->imageUrl."&type=".$value->imageType."&size=".$value->imageSize."&name=".$value->imageName ;?>">Pobierz pełny obraz</a>
                     <?php endif; ?>
                 </div>
     </div>
