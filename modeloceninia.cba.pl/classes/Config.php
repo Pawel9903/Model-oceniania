@@ -30,7 +30,7 @@ class Config
     /**
      * @return string
      */
-    public function getHost()
+    public function getHost(): string
     {
         return $this->host;
     }
@@ -38,7 +38,7 @@ class Config
     /**
      * @return string
      */
-    public function getDbName()
+    public function getDbName(): string
     {
         return $this->dbName;
     }
@@ -46,7 +46,7 @@ class Config
     /**
      * @return string
      */
-    public function getUserName()
+    public function getUserName(): string
     {
         return $this->userName;
     }
@@ -54,7 +54,7 @@ class Config
     /**
      * @return string
      */
-    public function getCharset()
+    public function getCharset(): string
     {
         return $this->charset;
     }
@@ -62,7 +62,7 @@ class Config
     /**
      * @return string
      */
-    public function getPassword()
+    public function getPassword(): string
     {
         return $this->password;
     }

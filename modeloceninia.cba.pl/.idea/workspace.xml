@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/addForm.php" afterPath="$PROJECT_DIR$/addForm.php" />
       <change beforePath="$PROJECT_DIR$/addReview.php" afterPath="$PROJECT_DIR$/addReview.php" />
-      <change beforePath="$PROJECT_DIR$/classes/Config.php" afterPath="$PROJECT_DIR$/classes/Config.php" />
       <change beforePath="$PROJECT_DIR$/classes/Reviews.php" afterPath="$PROJECT_DIR$/classes/Reviews.php" />
       <change beforePath="$PROJECT_DIR$/css/custom.css" afterPath="$PROJECT_DIR$/css/custom.css" />
       <change beforePath="$PROJECT_DIR$/images/19348bus3.jpg" afterPath="" />
@@ -50,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reviews.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Reviews.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/Reviews.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
@@ -62,16 +61,6 @@
                 <marker date="1519990660431" expanded="true" signature="1815:2053" ph="INSERT INTO reviews... " />
                 <marker date="1519990660431" expanded="true" signature="2780:2814" ph="DELETE FROM reviews... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/classes/Config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="64" column="33" lean-forward="false" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -118,6 +107,7 @@
         <option value="$PROJECT_DIR$/Template/elements/topMenu.html" />
         <option value="$PROJECT_DIR$/topMenu.html" />
         <option value="$PROJECT_DIR$/classes/Initiate.php" />
+        <option value="$PROJECT_DIR$/classes/Config.php" />
         <option value="$PROJECT_DIR$/head.php" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/download.php" />
@@ -133,7 +123,6 @@
         <option value="$PROJECT_DIR$/addForm.php" />
         <option value="$PROJECT_DIR$/classes/Reviews.php" />
         <option value="$PROJECT_DIR$/list_p.php" />
-        <option value="$PROJECT_DIR$/classes/Config.php" />
       </list>
     </option>
   </component>
@@ -144,7 +133,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="690" />
@@ -255,15 +244,16 @@
       <workItem from="1519806104667" duration="35963000" />
       <workItem from="1519844616623" duration="124000" />
       <workItem from="1519845230521" duration="343000" />
-      <workItem from="1519980341257" duration="11431000" />
+      <workItem from="1519980341257" duration="10798000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97341000" />
+    <option name="totallyTimeSpent" value="96708000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24377745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -513,6 +503,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/classes/xddddddd.php" />
     <entry file="file://$PROJECT_DIR$/topMenu.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -646,14 +643,6 @@
             <marker date="1519990660431" expanded="true" signature="1815:2053" ph="INSERT INTO reviews... " />
             <marker date="1519990660431" expanded="true" signature="2780:2814" ph="DELETE FROM reviews... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="64" column="33" lean-forward="false" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
