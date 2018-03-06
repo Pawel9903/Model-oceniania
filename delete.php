@@ -1,5 +1,5 @@
 <?php
-include_once ("classes/initiate.php");
+include_once ("topMenu.php");
 
 if(isset($_GET['id']) && is_numeric($_GET['id'])){
     $reviews = new Reviews();

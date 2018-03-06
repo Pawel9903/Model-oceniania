@@ -22,7 +22,11 @@ foreach($query->fetchAll() as $key=>$value):?>
                          <ul class="list-group list-group-flush ">
                             <li class="list-group-item py-1"><?php echo "E-mail: ".$value->email; ?></li>
                             <li class="list-group-item py-1" ><?php echo "Temat: ".$value->category; ?></li>
-                            <li class="list-group-item py-1" ><?php echo "Ocena: ".$value->rating; ?></li>
+                            <li class="list-group-item py-1" ><span>Ocena:</span><br> <?php for ($i=1;$i<=$value->rating;
+                                                                                             $i++){
+                                echo "<a class='listStar' >★</a>";
+                                } ?>
+                            </li>
                             <li class="list-group-item py-1" ><?php echo "Opis: ".$value->description; ?></li>
                             <li class="list-group-item py-1" ><?php echo "IP: ".$value->ip; ?></li>
                          </ul>

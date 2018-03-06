@@ -40,3 +40,8 @@ label:hover ~ label::before,
 #disabled{
     color: black;
 }
+
+.listStar{
+    color:gold;
+    font-size: 40px;
+}
