@@ -48,10 +48,10 @@ include_once('addReview.php')
             <textarea name="AddDescription" class="form-control"><?php echo $form['description'];?></textarea>
                 <br>
             <span class="font-weight-bold" >Dodaj zdjęcie (dopuszczalny format png lub jpg)</span>
-            <div class="custom-file">
-                <label class="custom-file-label" for="customFile"></label>
-                <input name="image" type="file" class="custom-file-input" id="customFile">
-            </div>
+            <br>
+            <input class="btn" type="file" name="image" id="fileToUpload">
+                Select image to upload:
+                <input type="file" name="image" id="fileToUpload">
             <div class="alert-danger"><?php echo $error['image'] ?></div>
 
             <span class="small">* - pola obowiązkowe</span>
