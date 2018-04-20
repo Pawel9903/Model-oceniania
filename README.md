@@ -1,4 +1,5 @@
 Tytuł: Opinie
+
 Opis: 
 
 Moduł składający się z formularza z polami:
@@ -19,4 +20,7 @@ Obrazek miniaturka przycięta podczas uploadu zdjęcia oraz link do pobrania pe�
 Paginacja listy co 5 opinii.
 
 Walidacja wypełnienia pól i poprawności wpisania maila.
+
+Użyte technologie:
+Html, Css, Php 7, MySql, Bootstrap 4
 
